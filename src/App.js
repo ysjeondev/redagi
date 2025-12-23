@@ -1,15 +1,10 @@
-import React from 'react'
-function App(){
-  const name ='리액트';
-  const style ={
-    backgroundColor:'black',
-    color:'aqua',
-    fontSize:'48px',
-    fontWeight:'bold',
-    padding:16
-  };
+import React from 'react';
+import Counter from './Counter';
 
-  return <div style={style}>{name}</div>
+const App = () =>{
+  
+  return <Counter/>
+
 }
 
 export default App;
