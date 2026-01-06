@@ -1,21 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const MyComponent = ( props) => {
-    const {name='니혼짱데스', children, role='FA개발자', age=20} = props;
+const MyComponent = (props) => {
+     const { name = '전윤수(디폴트)' } = props; //비구조화 할당 문법
     return (
         <div> 
-            나의 새롭고 먼진 2026년을 위해 공부 <br />
-            안녕~ 나의 이름은 {name} 이다. 우리 열심히 공부해 보자 <br/>
-            children 값은 {children}, <br />
-            역활은 {role} <br />
-            나이은 {age}
+            {name}의 새롭고 멋진 2026년도를 위해... 
+            children 값은 {props.children}
         </div>
-    );
+    ) 
 };
 
-
-MyComponent.prototype = {
-    name : PropTypes.string
-}
 export default MyComponent;
