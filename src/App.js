@@ -1,15 +1,9 @@
 
-import React, { Component } from 'react';
-import FocusInput from './ExRef_FocusInput';
+import React from "react";
+import Counter from "./Counter";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <FocusInput />
-      </div>
-    );
-  }
+const App=() => {
+  return <Counter />;
 }
 
 export default App;
